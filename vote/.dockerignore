@@ -1,3 +1,4 @@
+# pour ne pas envoyer les fichiers dans ces images
 __pycache__
 *.pyc
 .git
