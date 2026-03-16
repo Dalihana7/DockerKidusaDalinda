@@ -15,7 +15,7 @@ namespace Worker
         public static int Main(string[] args)
         {
             var redisHost = Environment.GetEnvironmentVariable("REDIS_HOST") ?? "redis";
-            var postgresHost = Environment.GetEnvironmentVariable("POSTGRES_HOST") ?? "postgres";
+            var postgresHost = Environment.GetEnvironmentVariable("POSTGRES_HOST") ?? "db";
             var postgresUser = Environment.GetEnvironmentVariable("POSTGRES_USER") ?? "postgres";
             var postgresPassword = Environment.GetEnvironmentVariable("POSTGRES_PASSWORD") ?? "postgres";
             var postgresDb = Environment.GetEnvironmentVariable("POSTGRES_DB") ?? "postgres";

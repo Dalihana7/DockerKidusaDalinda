@@ -23,7 +23,7 @@ io.sockets.on("connection", function (socket) {
 })
 
 const pool = new pg.Pool({
-  connectionString: process.env.DATABASE_URL || "postgres://postgres:postgres@postgres:5432/postgres",
+  connectionString: process.env.DATABASE_URL || "postgres://postgres:postgres@db:5432/postgres",
 })
 
 async.retry(
