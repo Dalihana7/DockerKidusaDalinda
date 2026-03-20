@@ -46,7 +46,7 @@ services:
         max_attempts: 3
 
   vote:
-    image: projetdockerkida-vote:latest
+    image: kidu03/dockerkidusadalinda-vote:latest
     ports:
       - "8090:8080"
     environment:
@@ -68,7 +68,7 @@ services:
         max_attempts: 3
 
   worker:
-    image: projetdockerkida-worker:latest
+    image: kidu03/dockerkidusadalinda-worker:latest
     environment:
       REDIS_HOST: redis
       POSTGRES_HOST: db
@@ -85,7 +85,7 @@ services:
         max_attempts: 5
 
   result:
-    image: projetdockerkida-result:latest
+    image: kidu03/dockerkidusadalinda-result:latest
     ports:
       - "8891:8888"
     environment:
